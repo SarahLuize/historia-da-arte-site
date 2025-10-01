@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    
+    <title>Quiz</title>
+</head>
+
+<body>
+
+  <h1>Agora é sua vez!</h1>
+
+  <div class="quiz-container">
+    
+      <h2>Quiz de História da Arte</h2>
+    
+      <!-- Pergunta 1 -->
+      <p>Qual é o nome do pintor que criou a Mona Lisa?</p>
+      <form id="quiz-form">
+        <label>
+          <input type="radio" name="answer1" value="Leonardo Da Vinci"> Leonardo Da Vinci
+        </label><br>
+        <label>
+          <input type="radio" name="answer1" value="Pablo Picasso"> Pablo Picasso
+        </label><br>
+        <label>
+          <input type="radio" name="answer1" value="Vincent Van Gogh"> Vincent Van Gogh
+        </label><br>
+        <label>
+          <input type="radio" name="answer1" value="Claude Monet"> Claude Monet
+        </label><br>
+        <button type="button" id="submit-btn">Enviar Resposta</button>
+        <div id="result1"></div>
+      </form>
+    
+      <!-- Pergunta 2 (Renascentismo, Barroco, Impressionismo) -->
+      <p>Qual período artístico corresponde à obra "A Noite Estrelada" de Vincent Van Gogh?</p>
+      <form id="quiz-form2">
+        <label>
+          <input type="radio" name="answer2" value="Renascentismo"> Renascentismo
+        </label><br>
+        <label>
+          <input type="radio" name="answer2" value="Barroco"> Barroco
+        </label><br>
+        <label>
+          <input type="radio" name="answer2" value="Impressionismo"> Impressionismo
+        </label><br>
+        <label>
+          <input type="radio" name="answer2" value="Modernismo"> Modernismo
+        </label><br>
+        <button type="button" id="submit-btn2">Enviar Resposta</button>
+      </form>
+      <div id="result2"></div>
+    </div>
+    
+    <a href="index.html" class="link center" id="visited"><br>Voltar a página principal <br><br><br></a>
+    
+    <script src="script/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+body{
+  background-color: #8dac7c;
+}
+
+h1, h2 {
+  text-align: center; /* Centraliza os títulos */
+}
+
+table {
+  border: 1px solid black; /* Borda da tabela */
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;          /* Alinha o texto à esquerda dentro das células */
+  border: 1px solid black; /* Borda preta de 1px nas células */
+}
+
+.img-ceia {
+  width: 600px;               
+  height: 337.5px;
+  margin: auto;               /* Centraliza o contêiner na página */
+  display: flex;              /* Ativa o layout flexbox dentro do contêiner */
+  justify-content: center;    /* Centraliza a imagem horizontalmente */
+  align-items: center;        /* Centraliza a imagem verticalmente */
+}
+.conversao-sao-paulo {
+  width: 528px;
+  height: 400px;
+  margin: auto;               /* Centraliza o contêiner na página */
+  display: flex;              /* Ativa o layout flexbox dentro do contêiner */
+  justify-content: center;    /* Centraliza a imagem horizontalmente */
+  align-items: center;        /* Centraliza a imagem verticalmente */
+}
+.impressao-nascer-do-sol {
+  width: 528px;
+  height: 410.85px;
+  margin: auto;               /* Centraliza o contêiner na página */
+  display: flex;              /* Ativa o layout flexbox dentro do contêiner */
+  justify-content: center;    /* Centraliza a imagem horizontalmente */
+  align-items: center;        /* Centraliza a imagem verticalmente */
+}
+
+#link, #visited { 
+  color: black;      /*Muda a cor dos links*/
+}
+
+.center {   /* Link centralizado */
+  height: 10px;
+  margin: auto;               /* Centraliza o contêiner na página */
+  display: flex;              /* Ativa o layout flexbox dentro do contêiner */
+  justify-content: center;    /* Centraliza a imagem horizontalmente */
+  align-items: center;        /* Centraliza a imagem verticalmente */
+}
+
+/* Estilo dos campos de input */
+input[type="text"] , input[type="email"] {
+  background-color: #94a8ce7c;  /* Cor de fundo do campo forms text */
+}
+
+span {
+  color: rgb(180, 40, 40);  /* Muda a cor do asterisco para vermelho no campo obrigatório */
+}
+
+.da-vinci-autorretrato {
+  width: 528px;
+  height: 297px;
+  margin: auto;               /* Centraliza imagens */
+  display: flex;              /* Centraliza imagens */
+  justify-content: center;    /* Centraliza imagens */
+  align-items: center;        /* Centraliza imagens */
+}
+
+.monet-autorretrato {
+  width: 270px; 
+  height: auto;               
+  margin: auto;               /* Centraliza imagens */
+  display: flex;              /* Centraliza imagens */
+  justify-content: center;    /* Centraliza imagens */
+  align-items: center;        /* Centraliza imagens */
+}
+
+.caravaggio-autorretrato,
+.lagarto {
+  display: block;
+  margin: 0 auto;
+}
+
+/*      CSS DO SLIDE       */
+
+.slider {             /* Estilo do slider */
+  position: relative;
+  margin: 0 auto;     /* Centraliza o slider */
+  width: 800px;
+  height: 400px;
+  overflow: hidden;   /* Oculta qualquer conteúdo que ultrapasse os limites do slider */
+}
+
+
+.slides {
+  width: 400%;
+  height: 400px;
+  display: flex;
+}
+
+
+.slides input {
+  display: none;    /* Esconde os inputs */
+}
+
+
+.slide {
+  width: 25%;     /* Cada slide ocupa 25% da largura */
+  position: relative;
+}
+
+
+.slide img {
+  width: 35%;
+  margin: auto;
+  display: flex;
+  justify-content: center;  /* Centraliza a imagem horizontalmente */
+  align-items: center;      /* Centraliza a imagem verticalmente */
+  object-fit: contain;      /* Ajusta a imagem sem distorção */
+}
+
+/* Botões de navegação do slider */
+.manual-navigation {
+  position: absolute;
+  bottom: 10px; /* Posiciona os botões abaixo da imagem */
+  left: 50%;
+  transform: translateX(-50%); /* Centraliza os botões */
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Espaçamento entre os botões */
+}
+
+/* Estilo dos botões do slider */
+.manual-btn {
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+  outline: none;
+}
+
+
+.manual-btn:hover,
+.manual-btn:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Deslocamento das imagens no slider */
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+/* Quando o radio1 é selecionado, o elemento com a classe .first será posicionado sem deslocamento */
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -25%;
+}
+#radio3:checked ~ .first {
+  margin-left: -50%;
+}
+
+/*     CSS DO QUIZ      */
+/* Estilo do quiz */
+.quiz-container{
+  width: 300px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Estilo dos botões no quiz */
+button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #28992b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  background-color: #45a049; /* Muda a cor do botão */
+}
+
+/* Estilo do resultado do quiz */
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
